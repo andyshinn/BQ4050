@@ -1,0 +1,212 @@
+#######################################
+# Syntax Coloring Map For BQ4050
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+BQ4050	KEYWORD1
+CellStatus	KEYWORD1
+TemperatureStatus	KEYWORD1
+BatteryInfo	KEYWORD1
+SafetyStatus	KEYWORD1
+CEDVStatus	KEYWORD1
+CEDVConfig	KEYWORD1
+CEDVProfile	KEYWORD1
+CEDVSmoothingConfig	KEYWORD1
+CEDVInfo	KEYWORD1
+DAConfiguration	KEYWORD1
+FETOptions	KEYWORD1
+PowerConfig	KEYWORD1
+IOConfig	KEYWORD1
+TemperatureConfig	KEYWORD1
+LEDConfig	KEYWORD1
+BalancingConfig	KEYWORD1
+SBSGaugingConfig	KEYWORD1
+SBSConfig	KEYWORD1
+SOCFlagConfig	KEYWORD1
+ProtectionConfig	KEYWORD1
+FullConfiguration	KEYWORD1
+CellCount	KEYWORD1
+BQ4050_Error	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+
+# Basic SBS Commands
+getRemainingCapacityAlarm	KEYWORD2
+getRemainingTimeAlarm	KEYWORD2
+getBatteryMode	KEYWORD2
+setBatteryMode	KEYWORD2
+getTemperature	KEYWORD2
+getVoltage	KEYWORD2
+getCurrent	KEYWORD2
+getAverageCurrent	KEYWORD2
+getRelativeStateOfCharge	KEYWORD2
+getAbsoluteStateOfCharge	KEYWORD2
+getRemainingCapacity	KEYWORD2
+getFullChargeCapacity	KEYWORD2
+getBatteryStatus	KEYWORD2
+getCycleCount	KEYWORD2
+getDesignCapacity	KEYWORD2
+getDesignVoltage	KEYWORD2
+
+# Cell Voltages
+getCellVoltage1	KEYWORD2
+getCellVoltage2	KEYWORD2
+getCellVoltage3	KEYWORD2
+getCellVoltage4	KEYWORD2
+
+# Status and Alerts
+getSafetyAlert	KEYWORD2
+getSafetyStatus	KEYWORD2
+getPFAlert	KEYWORD2
+getPFStatus	KEYWORD2
+getOperationStatus	KEYWORD2
+getChargingStatus	KEYWORD2
+getGaugingStatus	KEYWORD2
+getManufacturingStatus	KEYWORD2
+
+# Manufacturer Access Commands
+getDeviceType	KEYWORD2
+getFirmwareVersion	KEYWORD2
+getHardwareVersion	KEYWORD2
+getManufacturerName	KEYWORD2
+getDeviceName	KEYWORD2
+getDeviceChemistry	KEYWORD2
+getLifetimeDataBlock1	KEYWORD2
+getLifetimeDataBlock2	KEYWORD2
+getLifetimeDataBlock3	KEYWORD2
+
+# FET Control
+enableChargeFET	KEYWORD2
+disableChargeFET	KEYWORD2
+enableDischargeFET	KEYWORD2
+disableDischargeFET	KEYWORD2
+enablePrechargeFET	KEYWORD2
+disablePrechargeFET	KEYWORD2
+setFETControl	KEYWORD2
+
+# Device Control
+enterCalibrationMode	KEYWORD2
+sealDevice	KEYWORD2
+resetDevice	KEYWORD2
+enterSleepMode	KEYWORD2
+enterShutdownMode	KEYWORD2
+
+# Data Flash Access
+readDataFlash	KEYWORD2
+writeDataFlash	KEYWORD2
+
+# Convenience Methods
+getAllCellStatus	KEYWORD2
+getAllTemperatures	KEYWORD2
+getCompleteBatteryStatus	KEYWORD2
+getParsedSafetyStatus	KEYWORD2
+
+# Simple Status Methods
+isCharging	KEYWORD2
+isDischarging	KEYWORD2
+isBatteryHealthy	KEYWORD2
+getEstimatedRuntime	KEYWORD2
+getEstimatedChargeTime	KEYWORD2
+getStateOfHealth	KEYWORD2
+
+# CEDV Methods
+getCEDVStatus	KEYWORD2
+getEDV0Threshold	KEYWORD2
+getEDV1Threshold	KEYWORD2
+getEDV2Threshold	KEYWORD2
+isEDVCompensationEnabled	KEYWORD2
+getCEDVConfig	KEYWORD2
+setCEDVConfig	KEYWORD2
+enableEDVCompensation	KEYWORD2
+disableEDVCompensation	KEYWORD2
+setFixedEDV0	KEYWORD2
+setFixedEDV1	KEYWORD2
+setFixedEDV2	KEYWORD2
+isUsingFixedEDV	KEYWORD2
+getCEDVProfile	KEYWORD2
+setCEDVProfile	KEYWORD2
+getSmoothingConfig	KEYWORD2
+setSmoothingConfig	KEYWORD2
+isLearningDischarge	KEYWORD2
+getQualifiedDischargeCount	KEYWORD2
+resetLearning	KEYWORD2
+getCompleteCEDVInfo	KEYWORD2
+
+# Settings Flash Configuration
+getCellCount	KEYWORD2
+setCellCount	KEYWORD2
+getDAConfiguration	KEYWORD2
+setDAConfiguration	KEYWORD2
+getFETOptions	KEYWORD2
+setFETOptions	KEYWORD2
+getPowerConfig	KEYWORD2
+setPowerConfig	KEYWORD2
+getIOConfig	KEYWORD2
+setIOConfig	KEYWORD2
+getTemperatureConfig	KEYWORD2
+setTemperatureConfig	KEYWORD2
+getLEDConfig	KEYWORD2
+setLEDConfig	KEYWORD2
+getBalancingConfig	KEYWORD2
+setBalancingConfig	KEYWORD2
+getSBSGaugingConfig	KEYWORD2
+setSBSGaugingConfig	KEYWORD2
+getSBSConfig	KEYWORD2
+setSBSConfig	KEYWORD2
+getSOCFlagConfig	KEYWORD2
+setSOCFlagConfig	KEYWORD2
+getProtectionConfig	KEYWORD2
+setProtectionConfig	KEYWORD2
+
+# Quick Setup Methods
+configureFor1S	KEYWORD2
+configureFor2S	KEYWORD2
+configureFor3S	KEYWORD2
+configureFor4S	KEYWORD2
+configureForRemovableBattery	KEYWORD2
+configureForEmbeddedBattery	KEYWORD2
+configureForPortableDevice	KEYWORD2
+configureForPowerBank	KEYWORD2
+
+# Configuration Management
+validateConfiguration	KEYWORD2
+isConfigurationValid	KEYWORD2
+getConfigurationErrors	KEYWORD2
+backupConfiguration	KEYWORD2
+restoreConfiguration	KEYWORD2
+resetToFactoryDefaults	KEYWORD2
+setPECEnabled	KEYWORD2
+isPECEnabled	KEYWORD2
+
+# Direct Register Access
+writeConfigRegister	KEYWORD2
+readConfigRegister	KEYWORD2
+
+# Error Handling
+getLastError	KEYWORD2
+getErrorString	KEYWORD2
+setDebugMode	KEYWORD2
+
+#######################################
+# Enumerations and Constants (LITERAL1)
+#######################################
+
+ONE_CELL	LITERAL1
+TWO_CELL	LITERAL1
+THREE_CELL	LITERAL1
+FOUR_CELL	LITERAL1
+
+BQ4050_ERROR_NONE	LITERAL1
+BQ4050_ERROR_I2C_TIMEOUT	LITERAL1
+BQ4050_ERROR_I2C_NACK	LITERAL1
+BQ4050_ERROR_INVALID_PARAMETER	LITERAL1
+BQ4050_ERROR_CRC_MISMATCH	LITERAL1
+BQ4050_ERROR_PEC_MISMATCH	LITERAL1
+BQ4050_ERROR_DEVICE_NOT_FOUND	LITERAL1

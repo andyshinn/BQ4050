@@ -1,0 +1,32 @@
+# Cppcheck suppressions file for BQ4050 Arduino Library
+# Format: [error id]:[file name]:[line number]
+# Use * as wildcard for file names or omit line numbers for file-wide suppressions
+
+# Suppress unused function warnings for public API methods
+# These are library functions meant to be used by external code
+unusedFunction
+
+# Suppress missing system include warnings for Arduino headers
+# Arduino IDE handles these includes automatically
+missingIncludeSystem:src/BQ4050.h:4
+missingIncludeSystem:src/BQ4050.h:5
+missingIncludeSystem
+
+# Suppress warnings about non-standard library functions
+# Arduino provides these functions
+functionStatic:*Serial*
+functionStatic:*delay*
+functionStatic:*delayMicroseconds*
+
+# Allow inline suppressions in code comments
+unmatchedSuppression
+
+# Suppress style warnings that are common in Arduino libraries
+variableScope:src/*
+unreadVariable:src/*
+
+# Suppress warnings about const correctness for Arduino compatibility
+constParameter:src/*
+constVariable:src/*
+
+checkersReport

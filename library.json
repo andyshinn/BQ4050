@@ -1,0 +1,54 @@
+{
+  "name": "BQ4050",
+  "version": "1.0.0",
+  "description": "Arduino library for Texas Instruments BQ4050 battery monitoring chip",
+  "keywords": [
+    "battery",
+    "monitoring",
+    "fuel gauge",
+    "BQ4050",
+    "Texas Instruments",
+    "I2C",
+    "SMBus",
+    "bms"
+  ],
+  "authors": [
+    {
+      "name": "Andy Shinn",
+      "maintainer": true
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andyshinn/BQ4050.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/andyshinn/BQ4050",
+  "platforms": [
+    "atmelavr",
+    "atmelsam",
+    "espressif8266",
+    "espressif32",
+    "teensy",
+    "ststm32",
+    "nordicnrf52"
+  ],
+  "frameworks": [
+    "arduino"
+  ],
+  "dependencies": [
+    {
+      "name": "Wire"
+    }
+  ],
+  "export": {
+    "include": [
+      "src/*",
+      "examples/*",
+      "keywords.txt",
+      "library.properties",
+      "README.md",
+      "LICENSE"
+    ]
+  }
+}
